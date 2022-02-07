@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="assets/logo.png"></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="assets/bg.jpg" class="bg">
+
+        <div class="content">
+            <img src="assets/name.png" class="movieTitle">
+            <h4>
+                <span>2014</span>
+                <span><i>10+</i></span>
+                <span>1h 37min</span>
+                <span>Fantasy</span>
+            </h4>
+            <p>
+                Baseado no conto da Bela Adormecida, o filme conta a história de Malévola (Angelina Jolie), a protetora do reino dos Moors. Desde pequena, esta garota com chifres e asas mantém a paz entre dois reinos diferentes, até se apaixonar pelo garoto Stefan (Sharlto Copley). Os dois iniciam um romance, mas Stefan tem a ambição de se tornar líder do reino vizinho, e abandona Malévola para conquistar seus planos. A garota torna-se uma mulher vingativa e amarga, que decide amaldiçoar a filha recém-nascida de Stefan, Aurora (Elle Fanning). Aos poucos, no entanto, Malévola começa a desenvolver sentimentos de amizade em relação à jovem e pura Aurora.
+            </p>
+
+            <div class="buttons">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo()"><img src="assets/play.png">Watch Trailer</a>
+    </div>
+
+    <div class="trailer">
+        <video src="https://youtu.be/Se6EAsQKOSs" controls="true"></video>
+        <img src="assets/close.png" class="close" onclick="toggleVideo()">
+    </div>
+</body>
+    <script src="src/script.js"></script>
+  </html>
